@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Not found</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      // Old sonara links (any page or file) move to the same place on the hidara site
+      if (location.pathname.startsWith('/sonara-releases/')) {
+        location.replace(location.pathname.replace('/sonara-releases/', '/hidara-releases/') + location.search + location.hash)
+      }
+    </script>
+  </head>
+  <body>
+    <p>This page doesn’t exist. hidara lives at <a href="https://flinnzee.github.io/hidara-releases/">flinnzee.github.io/hidara-releases</a>.</p>
+  </body>
+</html>
